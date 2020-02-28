@@ -1,0 +1,85 @@
+.root {
+  width: 60%;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  padding: 34px 18px 26px 18px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+
+  .avatar {
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 30px;
+
+    .header {
+      display: flex;
+      flex-direction: row;
+
+      .name {
+        color: #2a2a2a;
+        font-weight: 600;
+        font-size: 19px;
+      }
+      .title {
+        color: #fff;
+        background-color: #333333;
+        display: inline-block;
+        padding: 6px 14px;
+        height: 26px;
+        border-radius: 13px;
+        box-sizing: border-box;
+        line-height: 1;
+        margin-left: 8px;
+      }
+      .publish-date {
+        color: #818181;
+        display: inline-block;
+        margin-left: 8px;
+      }
+    }
+    .comment {
+      color: #333333;
+      font-size: 19px;
+      line-height: 1.54;
+      margin: 15px 0px;
+    }
+    .footer {
+      color: #c5c5c5;
+
+      .reply {
+        cursor: pointer;
+      }
+      .reply-cnt {
+        display: inline-block;
+        margin-left: 23px;
+        word-spacing: 7px;
+      }
+      .vote {
+        display: inline-block;
+        margin-left: 28px;
+        word-spacing: 7px;
+        cursor: pointer;
+      }
+      .opposite {
+        display: inline-block;
+        margin-left: 28px;
+        word-spacing: 7px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &:hover {
+    .footer {
+      color: #222;
+    }
+  }
+}
